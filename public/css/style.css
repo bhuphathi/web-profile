@@ -3,10 +3,10 @@
 :root{
     /* --primary: #F59E0B; */
     --primary: #f59e0b;
-    --nav-link-color: #f59e0b;
-    --nav-brand-color: #f59e0b;
-    --header-color: white;
-    --footer-color: white;
+    --nav-link-color: black;
+    --nav-brand-color: black;
+    --header-color: #FBBF24;
+    --footer-color: #FBBF24;
     --body-bg: white;
     /* --body-bg: #fffbeb34; */
     --off-white: #FFFBEBe0;
@@ -30,7 +30,6 @@ body{
 }
 
 .container{
-    width: 100%;
     max-width: 900px;
     margin: 0px auto;
     padding: 0rem 2rem;
@@ -97,6 +96,23 @@ small{
     text-decoration: none;
 }
 
+.hero{
+    padding: 0.5rem;
+}
+
+.hero-img{
+    display: block;
+    /* max-width: 80%; */
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 350px;
+}
+
+.hero-header{
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
 .link{
     text-decoration: none;
     padding: 0rem 1rem; 
@@ -114,9 +130,10 @@ small{
 }
 
 .section{
+    box-shadow: 3px 4px 2px -2px rgba(0,0,0,0.1);
     padding: 2rem;
     border-radius: 1rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
 }
 
@@ -130,8 +147,8 @@ small{
     border-top-left-radius: 1rem;
     box-shadow: 3px -4px 2px -2px rgba(0,0,0,0.1);
     text-align: center;
-    /* padding: 0.5rem; */
-    /* border: 0; */
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .footer-header{
@@ -140,7 +157,7 @@ small{
 }
 
 .footer .link{
-    color: var(--primary);
+    color: var(--nav-link-color);
 }
 
 .contrast{
