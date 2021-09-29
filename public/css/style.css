@@ -187,12 +187,16 @@ body{
     height: 32px;
 }
 
-.section p{
+.paragraph-margin-padding{
     margin-top: 0.2rem;
     padding-bottom: 1rem;
 }
 
-.section h2{
+.heading-marging-topbottom{
     margin-bottom: 0.2rem;
     margin-top: 0.2rem;
+}
+
+.blog{
+    text-align: justify;
 }
