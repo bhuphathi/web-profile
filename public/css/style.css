@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
-:root{
+:root {
     /* --primary: #F59E0B; */
     --primary: #f59e0b;
     --nav-link-color: black;
@@ -9,11 +8,10 @@
     --footer-color: #FBBF24;
     --body-bg: white;
     /* --body-bg: #fffbeb34; */
-    --off-white: #FFFBEBe0;
-
+    --off-white: #F3F4F6;
 }
 
-ul{
+ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -21,7 +19,7 @@ ul{
     padding-inline-start: 0px;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     margin: 0px 0px;
     padding: 0px;
@@ -29,37 +27,37 @@ body{
     background-color: var(--body-bg);
 }
 
-.container{
+.container {
     max-width: 900px;
     margin: 0px auto;
     padding: 0rem 2rem;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0rem 1rem;
 }
 
-.list-no-bullet{
+.list-no-bullet {
     list-style: none;
 }
 
-.list-item-inline{
+.list-item-inline {
     display: inline;
 }
 
-.title{
+.title {
     letter-spacing: 0.13em;
 }
 
-.nav-brand{
+.nav-brand {
     font-size: 1.5rem;
     font-weight: bolder;
     font-style: italic;
     color: var(--nav-brand-color);
 }
 
-.navigation{
-    box-shadow: 3px 4px 2px -2px rgba(0,0,0,0.1);
+.navigation {
+    box-shadow: 3px 4px 2px -2px rgba(0, 0, 0, 0.1);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     /* padding: 0rem 2rem; */
@@ -67,7 +65,7 @@ body{
     background-color: var(--header-color);
 }
 
-.nav-menu{
+.nav-menu {
     text-align: right;
     padding-inline-start: 0px;
     margin-block-start: 0em;
@@ -76,30 +74,30 @@ body{
     margin-inline-end: 0px;
 }
 
-.link-nav{
+.link-nav {
     color: var(--nav-link-color);
     margin: 0rem 0.5rem;
     text-decoration: none;
     font-size: larger;
 }
 
-.link-nav:hover{
+.link-nav:hover {
     text-decoration: underline;
     color: white;
     color: var(--nav-link-color);
 }
 
-.nav-menu .active{
+.nav-menu .active {
     color: var(--nav-link-color);
     font-weight: bold;
     text-decoration: none;
 }
 
-.hero{
+.hero {
     padding: 0.5rem;
 }
 
-.hero-img{
+.hero-img {
     display: block;
     /* max-width: 80%; */
     margin: 0 auto;
@@ -107,71 +105,72 @@ body{
     width: 350px;
 }
 
-.hero-header{
+.hero-header {
     text-align: center;
     margin: 0.5rem 0;
 }
 
-.link{
+.link {
     text-decoration: none;
-    padding: 0.3rem 1rem; 
+    padding: 0.3rem 1rem;
+    margin: 0.5rem;
 }
 
 .link-primary {
     background-color: var(--primary);
     border-radius: 0.5rem;
     color: white;
-  }
-
-.link-secondary{
-    border: 1px solid var(--primary);
-    border-radius: 0.5rem;      
-    color:var(--primary);
 }
 
-.section{
-    box-shadow: 3px 4px 2px -2px rgba(0,0,0,0.1);
+.link-secondary {
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    color: var(--primary);
+}
+
+.section {
+    box-shadow: 3px 4px 2px -2px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     border-radius: 1rem;
     margin: 1rem auto;
     text-align: center;
 }
 
-.grey{
+.grey {
     background-color: var(--off-white);
 }
 
-.footer{
+.footer {
     background-color: var(--footer-color);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    box-shadow: 3px -4px 2px -2px rgba(0,0,0,0.1);
+    box-shadow: 3px -4px 2px -2px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 }
 
-.footer-header{
+.footer-header {
     font-weight: bold;
     margin: 0.5rem 0rem;
 }
 
-.footer .link{
+.footer .link {
     color: var(--nav-link-color);
 }
 
-.contrast{
+.contrast {
     background-color: var(--primary);
     color: black;
 }
 
-.skills{
+.skills {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
-.skills-icon-wrapper{
+
+.skills-icon-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,22 +180,22 @@ body{
     font-size: small;
 }
 
-.skills-icon{
+.skills-icon {
     font-size: 2rem;
     width: 32px;
     height: 32px;
 }
 
-.paragraph-margin-padding{
+.paragraph-margin-padding {
     margin-top: 0.5rem;
     padding-bottom: 1rem;
 }
 
-.heading-marging-topbottom{
+.heading-marging-topbottom {
     margin-bottom: 0.2rem;
     margin-top: 0.2rem;
 }
 
-.blog{
+.blog {
     text-align: justify;
 }
