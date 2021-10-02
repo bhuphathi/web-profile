@@ -38,18 +38,8 @@
     </nav>
 
     <header class="hero-header">
-        <h1>read my blogs</h1>
+        <h1>How Javascript Works</h1>
     </header>
-
-    <section class="section container grey blog">
-        <h2 class="heading-marging-topbottom">Date Function - in Javascript</h2>
-        <small>02-Oct-2021</small>
-        <p> Date function in javascript reduces writing lots of codes, I'm showing few examples here to Get date in
-            'ddmmyy' string format and to reverse the ddmmyy string to yymmdd string.
-        </p>
-        <a class="link link-primary" href="https://bhupathi.hashnode.dev/date-function-javascript">Read More</a>
-
-    </section>
 
     <section class="section container blog">
         <h2 class="heading-marging-topbottom">How Javascript Works</h2>
@@ -63,8 +53,14 @@
             asynchronous execution. 
         </p>
         
-        <h3>What is Synchronous and Asynchronous:</h3>...      
-        <a class="link link-primary" href="/javascript.html">Read More</a>
+        <h3>What is Synchronous and Asynchronous:</h3>
+        
+        <p>
+        <strong>Synchronous:</strong> In synchronous programming the program executes line by line and waits for the process to finish before movingto next line. This makes the synchronous program much slower than asynchronous programs.</p>
+
+        <p><strong>Asynchronous:</strong> In asynchronous programming execution will not happen sequentially. That means the program will not wait for the execution to finish. It will move immediately to the next line and executes. What happened to the previous line that needs time to be executed (ex. a request sent to a server) it will be moved to web api environment and there it waits for the request to resolve, after it gets resolved it will be moved to message queue. In the meanwhile the event loop is constantly monitors the execution stack and event loop. As soon as execution stack is empty the callback function in message queue that need to be executed will be pushed by event loop to the execution stack.
+        </p>
+
     </section>
 
 
