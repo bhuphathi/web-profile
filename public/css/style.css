@@ -200,3 +200,7 @@ body {
 .blog {
     text-align: justify;
 }
+
+.blogread{
+    line-height: 2rem;
+}

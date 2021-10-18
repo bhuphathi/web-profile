@@ -38,28 +38,24 @@
     </nav>
 
     <header class="hero-header">
-        <h1>How Javascript Works</h1>
+        <h1>Proxy Server in React</h1>
     </header>
 
     <section class="section container blog blogread">
-        <h2 class="heading-marging-topbottom">How Javascript Works</h2>
-        <small>02-Oct-2021</small>
-        <p>JavaScript is a “high-level, single threaded, just in time compiled (interpreted)
-            prototype based, garbage collected, multi paradigm dynamic language with asynchronous non-blocking event loop. 
-        </p>
-        
+        <h2 class="heading-marging-topbottom">CORS Error</h2>
+        <small>18-Oct-2021</small>
+        <p>In fullstack react frontend web app may have to access files or api-ends from backend server through http request frequently from separate ip or port. If the CORS settings are not configured correctly, the browser will block and present an error as <i>"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at $accessed-url."</i></p>
         <p>
-            Program in JavaScript executes much faster than other interpreted languages like python, this is because of
-            asynchronous execution. 
+        CORS or same origin policy is applied to scripts by browser or browser like emulators. If CORS is not enabled The browser will allow scripts from same orgin only (same ip & port). 
         </p>
-        
-        <br>
-        <h3>What is Synchronous and Asynchronous:</h3>
-        
-        <p>
-        <strong>Synchronous:</strong> In synchronous programming the program executes line by line and waits for the process to finish before movingto next line. This makes the synchronous program much slower than asynchronous programs.</p>
 
-        <p><strong>Asynchronous:</strong> In asynchronous programming execution will not happen sequentially. That means the program will not wait for the execution to finish. It will move immediately to the next line and executes. What happened to the previous line that needs time to be executed (ex. a request sent to a server) it will be moved to web api environment and there it waits for the request to resolve, after it gets resolved it will be moved to message queue. In the meanwhile the event loop is constantly monitors the execution stack and event loop. As soon as execution stack is empty the callback function in message queue that need to be executed will be pushed by event loop to the execution stack.
+        <p>The browser does not implicitly trust the websites which make requests from or to other websites. Browser protects the site by blocking the cross origin requests.</p>
+        </br>
+        <p>
+        <h2>Proxy Server Settings</h2>
+        
+        </p>
+    
         </p>
 
     </section>
