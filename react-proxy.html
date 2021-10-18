@@ -38,25 +38,33 @@
     </nav>
 
     <header class="hero-header">
-        <h1>Proxy Server in React</h1>
+        <h1>Proxy Server in React App</h1>
     </header>
 
     <section class="section container blog blogread">
         <h2 class="heading-marging-topbottom">CORS Error</h2>
         <small>18-Oct-2021</small>
-        <p>In fullstack react frontend web app may have to access files or api-ends from backend server through http request frequently from separate ip or port. If the CORS settings are not configured correctly, the browser will block and present an error as <i>"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at $accessed-url."</i></p>
+        <p>In fullstack react frontend web app may have to access files or api-ends from backend server through http request frequently from separate ip or port. If the CORS settings are not configured correctly, the browser will block and present an error as <em>"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at $accessed-url."</em></p>
         <p>
-        CORS or same origin policy is applied to scripts by browser or browser like emulators. If CORS is not enabled The browser will allow scripts from same orgin only (same ip & port). 
-        </p>
+        CORS or same origin policy is applied to scripts by browser or browser emulators. If CORS is not enabled The browser will allow scripts from same orgin only (same ip & port). The browser does not implicitly trust the websites which make requests from or to other websites. Browser protects the site by blocking the cross origin requests.</p>
 
-        <p>The browser does not implicitly trust the websites which make requests from or to other websites. Browser protects the site by blocking the cross origin requests.</p>
+        <p>
+            The browser first sends the preflight request (OPTIONS method) to the server from <code>www.example.com</code>, when the server receives the request other than <code>www.example.com</code> it responds with <code>Access-Control-Allow-Origin</code> header with the allowed origins. On receiving the allowed origins browser will block the request to disallowed origin from the site.
+        </p>
         </br>
         <p>
-        <h2>Proxy Server Settings</h2>
-        
+        <h2>Solution: Proxy Server Settings</h2>
+            To solve this problem in react web app, we can configure proxy in package.json file of react project (frontend). Proxy setting in frontend package.json file will make the app pretend requests from the same port and server.
+
+            To configure the proxy add belo line to react app's (frontend) package.json files.
+        </p>
+
+        <p>
+            <code>"proxy": "http://localhost:&lt;SERVER-PORT-NUMBER&gt;"</code>
+            <br> <br>
+            Now we can make API requests from react app using relative paths. for example <code>http://localhost:3001/sales</code> becomes <code>/sales,</code> the development server will recognize and will proxy the request to <code>http://localhost:3001/sales</code>.
         </p>
     
-        </p>
 
     </section>
 

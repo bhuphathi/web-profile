@@ -204,3 +204,8 @@ body {
 .blogread{
     line-height: 2rem;
 }
+
+code{
+    font-size: 1rem;
+    background-color: beige;
+}
