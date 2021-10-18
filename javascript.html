@@ -57,11 +57,13 @@
         <h3>What is Synchronous and Asynchronous:</h3>
         
         <p>
-        <strong>Synchronous:</strong> In synchronous programming the program executes line by line and waits for the process to finish before movingto next line. This makes the synchronous program much slower than asynchronous programs.</p>
+        <h4>Synchronous:</h4> In synchronous programming the program executes line by line and waits for the process to finish before moving to next line. This makes the synchronous program much slower than asynchronous programs.</p>
 
-        <p><strong>Asynchronous:</strong> In asynchronous programming execution will not happen sequentially. That means the program will not wait for the execution to finish. It will move immediately to the next line and executes. What happened to the previous line that needs time to be executed (ex. a request sent to a server) it will be moved to web api environment and there it waits for the request to resolve, after it gets resolved it will be moved to message queue. In the meanwhile the event loop is constantly monitors the execution stack and event loop. As soon as execution stack is empty the callback function in message queue that need to be executed will be pushed by event loop to the execution stack.
+        <p><h4>Asynchronous:</h4> In asynchronous programming execution will not happen sequentially. That means the program will not wait for the execution to finish. It will move immediately to the next execution. What happened to the previous execution that needs time to be executed (ex. a request sent to a server), it will be moved to web api environment and there it waits for the request to resolve, after it gets resolved it will be moved to callback/task queue. In the meanwhile the event loop is constantly monitors the execution stack and callback/task queue. As soon as execution stack is empty the callback function in task queue that need to be executed will be pushed by event loop to the execution stack.
         </p>
 
+        <img src="./public/images/event-loop.png" alt="javascript event loop" >
+         <figcaption class="caption">Visual representation of the Event Loop. Thanks to <a class="caption" href="https://www.javascripttutorial.net/">Javascript Tutorial</a></figcaption>
     </section>
 
 
